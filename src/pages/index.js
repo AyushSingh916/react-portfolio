@@ -27,7 +27,7 @@ export default function Home() {
             <div className="w-1/2">
               <img
                 src="https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706283290608-n4hq7k"
-                className="rounded-full w-64 h-64 object-cover"
+                className="rounded-full w-96 h-96 lg:w-120 lg:h-120 xl:w-144 xl:h-144 object-cover shadow-md border-4 border-white"
                 alt="Profile Picture"
               />
             </div>
