@@ -39,7 +39,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>Gaurav | About Page</title>
+        <title>John | About Page</title>
         <meta name="description" content="any description" />
       </Head>
       <main className="flex w-full flex-col items-center justify-center ">

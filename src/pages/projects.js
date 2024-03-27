@@ -30,7 +30,7 @@ const Projects = () => {
   return (
     <>
       <Head>
-        <title>Gaurav | Projects</title>
+        <title>John | Projects</title>
         <meta name="description" content="Gaurav's Projects" />
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">

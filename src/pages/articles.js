@@ -74,7 +74,6 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
 };
 
 const articles = () => {
-  console.log(testimonial);
   return (
     <>
       <Head>
@@ -84,7 +83,7 @@ const articles = () => {
       <main className="w-100% mb-16 flex flex-col items-center justify-center overflow-hidden">
         <Layout className="p-32 pt-16 w-80%">
           <AnimatedText text="Words Can Change the World!" className="mb-16" />
-          <ul className="grid grid-cols-2 gap-16">
+          <ul className="grid gap-16">
             {testimonial.map((testimony, index) => (
               <FeaturedArticle
                 key={index}
@@ -103,4 +102,3 @@ const articles = () => {
 };
 
 export default articles;
-
