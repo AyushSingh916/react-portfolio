@@ -1,15 +1,4 @@
-import Jungle from "./../../img/Jungle.jpg";
-import Books from "./../../img/Books2.jpg";
-import Hotel from "./../../img/Hotel.jpg";
-import Marvel from "./../../img/Marvel.jpg";
-import News from "./../../img/News.jpg";
-import Shiny from "./../../img/Shiny.jpg";
-import Portfolio from "./../../img/Portfolio.jpg";
-import WorkInProgress from "./../../img/WorkInProgress.jpg";
-import AlexShopEcommerce from "./../../img/Alex_Shop_Ecommerce.jpg";
-import abc from "./../../img/abc.jpg";
-
-export const projects = {
+const ProjectData = {
   collaborations: [
     {
       name: "StartupX",
@@ -200,3 +189,5 @@ export const projects = {
     }
   ]
 };
+
+export default ProjectData;
