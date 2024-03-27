@@ -45,55 +45,54 @@ const about = () => {
         <meta name="description" content="any description" />
       </Head>
       <main className="flex w-full flex-col items-center justify-center ">
-        <Layout className="pt-16 p-32 ">
+        <Layout className="pt-16 p-4 sm:p-8 ">
           <AnimatedText
             text={apiData.user.about.quote}
-            className="inline-block text-dark dark:text-light text-8xl font-bold w-full capitalize mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 xl:text-6xl"
+            className="inline-block text-dark dark:text-light text-4xl md:text-5xl lg:text-6xl font-bold w-full capitalize mb-8 !leading-tight sm:mb-10 xl:mb-16"
           />
-          <div className="grid w-full grid-cols-8 gap-16 w-[80%] mx-auto mt-10">
-            <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2  md:col-span-8">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
+          <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 xl:gap-16 w-[80%] mx-auto">
+            <div className="flex flex-col items-start justify-start">
+              <h2 className="mb-2 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 Description
               </h2>
 
               <p className="font-medium dark:text-light">
                 {apiData.user.about.description}
               </p>
-              <p className="my-4 font-medium dark:text-light">
-                I believe that design is about more than just making things look
-                pretty – it&apos;s about solving problems and creating
-                intuitive, enjoyable experiences for users.
-              </p>
+
             </div>
 
-
-            <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
-              <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block text-7xl font-bold dark:text-light md:text-6xl sm:text-5xl xs:text-4xl">
+            <div className="flex flex-col items-center justify-center">
+              <div className="mb-8 md:mb-12">
+                <span className="inline-block text-4xl md:text-5xl lg:text-6xl font-bold dark:text-light">
                   <AnimatedNumbers value={14} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                <h2 className="text-base md:text-lg font-medium capitalize text-dark/75 dark:text-light/75 mt-2">
                   projects completed
                 </h2>
               </div>
-              <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block text-7xl font-bold dark:text-light md:text-6xl sm:text-5xl xs:text-4xl">
+              <div className="mb-8 md:mb-12">
+                <span className="inline-block text-4xl md:text-5xl lg:text-6xl font-bold dark:text-light">
                   <AnimatedNumbers value={apiData.user.about.some_total} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                <h2 className="text-base md:text-lg font-medium capitalize text-dark/75 dark:text-light/75 mt-2">
                   github repositories
                 </h2>
               </div>
-              <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block text-7xl font-bold dark:text-light md:text-6xl sm:text-5xl xs:text-4xl">
+              <div className="mb-8 md:mb-12">
+                <span className="inline-block text-4xl md:text-5xl lg:text-6xl font-bold dark:text-light">
                   <AnimatedNumbers value={apiData.user.about.exp_year} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                <h2 className="text-base md:text-lg font-medium capitalize text-dark/75 dark:text-light/75 mt-2">
                   years of experience
                 </h2>
               </div>
             </div>
           </div>
+
+          <hr /> 
+          <br />
+          
           <Skills />
           <Experience />
           <Education />
