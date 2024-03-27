@@ -3,7 +3,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import AnimatedText from "../components/AnimatedText";
 import ProjectModal from "../components/ProjectModal";
-import ProjectData from "../components/data/Projects";
+import ProjectData from "../components/data/ProjectsData";
 import Project from "../components/Project";
 
 const Projects = () => {

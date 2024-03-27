@@ -1,7 +1,7 @@
 import { useScroll, motion } from "framer-motion";
 import { useRef } from "react";
 import LiIcon from "./LiIcon";
-import { projects } from "./data/Projects";
+import ProjectsData from "./data/ProjectsData";
 
 const CollabDetails = ( {collaborations} ) => {
     return collaborations.map((collab) => (
@@ -71,7 +71,7 @@ const Experience = () => {
         target: ref,
         offset: ["start end", "center start"],
     });
-    const collaborations = projects.collaborations;
+    const collaborations = ProjectsData.collaborations;
     return (
         <div className="my-64">
             <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16 dark:text-light" >
