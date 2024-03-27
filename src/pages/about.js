@@ -9,12 +9,12 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import useUserData from "@/components/hooks/useUserData";
-import apiData from '@/pages/api/api_data.json';
+import apiData from "@/pages/api/api_data.json";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
 
-  const {userData, loading, error} = useUserData();
+  const { userData, loading, error } = useUserData();
 
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
@@ -46,7 +46,10 @@ const about = () => {
       </Head>
       <main className="flex w-full flex-col items-center justify-center ">
         <Layout className="pt-16 p-32 ">
-          <AnimatedText text={apiData.user.about.quote} className="inline-block text-dark dark:text-light text-8xl font-bold w-full capitalize mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 xl:text-6xl"/>
+          <AnimatedText
+            text={apiData.user.about.quote}
+            className="inline-block text-dark dark:text-light text-8xl font-bold w-full capitalize mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 xl:text-6xl"
+          />
           <div className="grid w-full grid-cols-8 gap-16 w-[80%] mx-auto mt-10">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2  md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
@@ -63,14 +66,6 @@ const about = () => {
               </p>
             </div>
 
-            <div className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark  bg-light p-8 dark:border-light dark:bg-dark xl:col-span-4 md:col-span-8 md:order-1 ">
-              <div className="absolute  top-0 -right-3 -z-10 h-[103%] w-[102%]  rounded-[2rem] rounded-br-3xl  bg-dark dark:bg-light  " />
-              <img
-                src={"https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706283290608-n4hq7k"}
-                alt="Codebucks"
-                className="w-full h-auto rounded-2xl"
-              />
-            </div>
 
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center xl:items-center">
@@ -78,7 +73,7 @@ const about = () => {
                   <AnimatedNumbers value={14} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                projects completed
+                  projects completed
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center xl:items-center">
